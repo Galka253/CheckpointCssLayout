@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", sans-serif;
+  margin: 8px 100px;
 }
 
 nav {
@@ -50,6 +51,18 @@ a {
 .Career:hover {
   color: #00c3a5;
 }
+.Menu {
+  display: none;
+  flex-direction: column;
+}
+.Departments:hover + .Menu {
+  display: flex;
+  color: #00c3a5;
+  margin-left: 120px;
+  padding-top: 10px;
+  line-height: 2;
+  cursor: pointer;
+}
 main {
   margin-top: 40px;
 }
@@ -83,6 +96,7 @@ p {
   justify-content: center;
   align-content: space-between;
   padding-top: 70px;
+  font-size: 20px;
 }
 .ForDoctors {
   margin: 0 15px;
@@ -105,4 +119,103 @@ p {
   background-color: #1b2734;
 
   border-radius: 15px;
+}
+#selectList {
+  background: transparent;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  text-decoration-line: underline;
+  display: block;
+  margin: 60px 20px 10px 40px;
+}
+select option {
+  color: #1b2734;
+}
+.Offices-in-the-World {
+  color: #00b39b;
+  text-align: center;
+  margin: 40px;
+  line-height: 40px;
+  font-family: Work Sans, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 35px;
+  font-stretch: extra-expanded;
+}
+.Offices-in-the-World ~ p {
+  display: block;
+  margin-bottom: 40px;
+  padding: 10px;
+  color: #747474;
+  font-size: 15px;
+  text-align: center;
+  font-weight: lighter;
+}
+.WOff {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  border-radius: 5px;
+}
+.City {
+  margin: 10px;
+  padding: 10px;
+}
+.SeeOpp {
+  margin-left: 120px;
+  margin-top: 20px;
+  padding: 5px;
+  color: white;
+  background-color: #37aed0;
+  border-radius: 3px;
+  border-color: transparent;
+  text-transform: uppercase;
+  font-size: x-small;
+  font-weight: 700;
+  cursor: pointer;
+}
+.SeeOpp:hover {
+  background-color: #1662c6;
+}
+a {
+  color: #747474;
+  font-size: larger;
+}
+img {
+  max-height: 280px;
+  max-width: 311px;
+}
+.Join {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #1b2734;
+}
+.JoinUs {
+  display: block;
+  margin: 0 auto;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  padding: 1.1666666667em 1.5em;
+  background: #3d83df;
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1em;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  transition: all 0.2s ease 0s;
+}
+footer {
+  margin-top: 60px;
+  text-align: center;
+
+  font-size: 12px;
+  color: #ababab;
 }
